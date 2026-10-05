@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kumar Pramod - Goods Supply, Manpower, Housekeeping, Horticulture and Civil Maintenance Services in Kanpur.">
+<title>Kumar Pramod | Reliable Solutions, Trusted Services</title>
+<style>
+:root{--navy:#061c38;--navy2:#09284b;--gold:#e7ad28;--gold2:#f5c54b;--white:#fff;--light:#f7f7f5;--text:#111827}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.55;background:#fff}
+a{text-decoration:none;color:inherit}
+.top{background:var(--navy);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:15px}
+.top .left,.top .right{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav{height:76px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 5%;box-shadow:0 2px 8px #0002;position:sticky;top:0;z-index:20}
+.logo{font-size:27px;font-weight:900;color:var(--gold);letter-spacing:1px}
+.logo span{color:var(--navy)}
+.navlinks{display:flex;align-items:center;gap:4px}
+.navlinks a{padding:26px 18px;font-weight:700;color:#142039}
+.navlinks a:hover,.navlinks a.active{background:var(--gold);color:#fff}
+.menu{display:none;border:0;background:var(--navy);color:#fff;padding:9px 12px;font-size:22px;border-radius:5px}
+.hero{min-height:460px;background:linear-gradient(90deg,#041a33 0%,#07294d 48%,#0c3156 100%);color:#fff;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:55px 7%;overflow:hidden}
+.hero h1{font-size:54px;color:var(--gold2);line-height:1.05;margin-bottom:14px}
+.hero h2{font-size:32px;line-height:1.2;margin-bottom:22px}
+.hero p{font-size:18px;max-width:640px;color:#f2f5f9;margin-bottom:28px}
+.buttons{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:5px;border:1px solid var(--gold);font-weight:700}
+.btn.gold{background:var(--gold);color:#111}
+.btn.outline{color:#fff}
+.visual{min-height:360px;display:flex;align-items:center;justify-content:center;position:relative}
+.building{width:95%;height:350px;border-radius:18px;background:
+linear-gradient(145deg,#b9d9ed 0%,#eaf4fa 45%,#89b8d6 46%,#dff2db 47%,#7bb76a 100%);
+box-shadow:0 25px 50px #0006;position:relative;overflow:hidden;border:3px solid #dca72a}
+.building:before{content:"";position:absolute;left:8%;right:8%;top:22%;height:43%;background:repeating-linear-gradient(90deg,#17486b 0 9%,#d8edf7 9% 12%),linear-gradient(#5c95b7,#dbeef8);opacity:.8;border:10px solid #f1f7fa}
+.building:after{content:"KUMAR PRAMOD • SERVICES";position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#0a3150;font-size:22px;font-weight:900;letter-spacing:2px}
+.badges{position:absolute;inset:0;pointer-events:none}
+.badge{position:absolute;width:110px;height:110px;border-radius:50%;border:4px solid var(--gold);background:#09284b;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:13px;padding:10px;box-shadow:0 7px 20px #0007}
+.b1{top:8%;right:20%}.b2{top:42%;right:5%}.b3{bottom:4%;right:25%}.b4{bottom:7%;left:8%}
+.section{padding:48px 5%}
+.title{text-align:center;color:var(--navy);font-size:30px;margin-bottom:30px}
+.title:after{content:"";display:block;width:85px;height:3px;background:var(--gold);margin:10px auto}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.card{border:1px solid #e1bb55;border-radius:9px;padding:25px 16px;text-align:center;background:#fff;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 25px #0001}
+.icon{width:65px;height:65px;border-radius:50%;background:var(--navy);color:var(--gold2);display:grid;place-items:center;margin:0 auto 14px;font-size:27px}
+.card h3{color:#101c35;margin-bottom:9px;font-size:17px}
+.card p{font-size:14px}
+.dark{background:var(--navy);color:#fff}
+.columns{display:grid;grid-template-columns:1.2fr 1fr 1.1fr;gap:35px}
+.columns h2{color:var(--gold2);margin-bottom:14px;font-size:21px}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:9px 25px;font-size:15px}
+.list div:before{content:"✓";color:var(--gold2);font-weight:900;margin-right:8px}
+.contact p{margin:9px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery div{height:190px;border-radius:12px;background:linear-gradient(135deg,#dcecf6,#8dbbd2);display:grid;place-items:center;color:#123451;font-weight:900;font-size:18px;border:2px solid #e2b43a}
+.form{max-width:800px;margin:auto;display:grid;gap:14px}
+.form input,.form textarea{width:100%;padding:13px;border:1px solid #bbb;border-radius:6px;font:inherit}
+.form textarea{min-height:120px}
+.form button{cursor:pointer;border:0}
+footer{background:#071b34;color:#fff;text-align:center;padding:18px 5%;border-top:5px solid var(--gold)}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#1db954;color:#fff;padding:14px 20px;border-radius:9px;font-weight:800;box-shadow:0 8px 22px #0004;z-index:30}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:44px}.navlinks a{padding:26px 10px}}
+@media(max-width:760px){
+.top{font-size:12px}.top .right{display:none}.nav{height:65px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;box-shadow:0 8px 15px #0002}.navlinks.show{display:flex}.navlinks a{padding:14px 22px}
+.hero{grid-template-columns:1fr;padding:45px 7%}.hero h1{font-size:39px}.hero h2{font-size:27px}.visual{min-height:270px}.building{height:260px}
+.cards{grid-template-columns:1fr}.columns{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.section{padding:40px 6%}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="left">
+    <span>☎ 9452613405</span>
+    <a href="mailto:kumpramodk1@gmail.com">✉ kumpramodk1@gmail.com</a>
+    <span>📍 Barasirohi, IIT Kanpur, Kanpur - 208016</span>
+  </div>
+  <div class="right"><span>Follow Us:</span><span>f</span><span>◎</span><span>in</span><span>☘</span></div>
+</div>
+
+<nav class="nav">
+  <a class="logo" href="#home">K<span>P</span></a>
+  <button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+  <div class="navlinks">
+    <a class="active" href="#home">HOME</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#services">SERVICES</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#why">WHY CHOOSE US</a>
+    <a href="#contact">CONTACT US</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h1>KUMAR PRAMOD</h1>
+    <h2>Reliable Solutions,<br>Trusted Services</h2>
+    <p>We provide professional Goods Supply, Manpower Services, Housekeeping, Horticulture and Civil Maintenance solutions for institutions, offices, industries and residential projects.</p>
+    <div class="buttons">
+      <a class="btn gold" href="#services">✉ Our Services</a>
+      <a class="btn outline" href="tel:9452613405">☎ Call Now: 9452613405</a>
+    </div>
+  </div>
+  <div class="visual">
+    <div class="building"></div>
+    <div class="badges">
+      <div class="badge b1">HOUSEKEEPING</div>
+      <div class="badge b2">CIVIL<br>MAINTENANCE</div>
+      <div class="badge b3">MANPOWER<br>SERVICES</div>
+      <div class="badge b4">HORTICULTURE</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2 class="title">OUR SERVICES</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🛒</div><h3>GOODS SUPPLY</h3><p>Supply of daily-use products, office consumables, cleaning materials and general items.</p></div>
+    <div class="card"><div class="icon">👥</div><h3>MANPOWER SERVICES</h3><p>Skilled, semi-skilled and unskilled workforce for all types of requirements.</p></div>
+    <div class="card"><div class="icon">🧹</div><h3>HOUSEKEEPING SERVICES</h3><p>Professional housekeeping services for commercial, industrial and institutional spaces.</p></div>
+    <div class="card"><div class="icon">🌱</div><h3>HORTICULTURE WORK</h3><p>Garden maintenance, plantation, landscaping, lawn care and complete horticulture support.</p></div>
+    <div class="card"><div class="icon">🏢</div><h3>CIVIL MAINTENANCE</h3><p>Civil repair, building maintenance, infrastructure support and maintenance supervision.</p></div>
+  </div>
+</section>
+
+<section class="section dark" id="why">
+  <div class="columns">
+    <div>
+      <h2>WHY CHOOSE US?</h2>
+      <div class="list">
+        <div>Experienced & Trained Team</div><div>Competitive Pricing</div>
+        <div>Quality Service Assurance</div><div>Customer Satisfaction</div>
+        <div>Timely Execution</div><div>Reliable & Responsible</div>
+      </div>
+    </div>
+    <div id="about">
+      <h2>ABOUT US</h2>
+      <p>Kumar Pramod is committed to delivering quality services with professionalism and dedication. Our goal is to build long-term relationships through trust, transparency and excellent service.</p>
+    </div>
+    <div class="contact" id="contact">
+      <h2>CONTACT US</h2>
+      <p>☎ <a href="tel:9452613405">9452613405</a></p>
+      <p>✉ <a href="mailto:kumpramodk1@gmail.com">kumpramodk1@gmail.com</a></p>
+      <p>📍 Barasirohi, IIT Kanpur, Kanpur - 208016</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2 class="title">GALLERY</h2>
+  <div class="gallery">
+    <div>HOUSEKEEPING</div><div>HORTICULTURE</div><div>CIVIL WORK</div>
+    <div>MANPOWER</div><div>GOODS SUPPLY</div><div>OUR TEAM</div>
+  </div>
+</section>
+
+<section class="section" id="enquiry">
+  <h2 class="title">SEND AN ENQUIRY</h2>
+  <form class="form" onsubmit="sendMail(event)">
+    <input id="name" required placeholder="Your Name">
+    <input id="phone" required placeholder="Mobile Number">
+    <input id="email" type="email" placeholder="Email Address">
+    <textarea id="message" required placeholder="Tell us about your requirement"></textarea>
+    <button class="btn gold" type="submit">SEND ENQUIRY</button>
+  </form>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919452613405?text=Hello%20Kumar%20Pramod%2C%20I%20want%20to%20know%20about%20your%20services." target="_blank">☘ Chat on WhatsApp</a>
+
+<footer>© 2026 Kumar Pramod. All Rights Reserved. <span style="margin-left:25px">Service | Trust | Quality</span></footer>
+
+<script>
+function sendMail(e){
+  e.preventDefault();
+  const n=document.getElementById('name').value;
+  const p=document.getElementById('phone').value;
+  const em=document.getElementById('email').value;
+  const m=document.getElementById('message').value;
+  const subject=encodeURIComponent('Website Enquiry - '+n);
+  const body=encodeURIComponent('Name: '+n+'\\nMobile: '+p+'\\nEmail: '+em+'\\n\\nRequirement:\\n'+m);
+  window.location.href='mailto:kumpramodk1@gmail.com?subject='+subject+'&body='+body;
+}
+</script>
+</body>
+</html>
